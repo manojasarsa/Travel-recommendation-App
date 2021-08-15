@@ -5,43 +5,67 @@ const travelDictionary = {
   "Jammu & Kashmir": [
     {
       place: "Srinagar",
-      famousFor: "Natural beauty, gardens, waterfronts and houseboats"
+      famousFor: "Natural beauty, gardens, waterfronts and houseboats",
+      Ratings: "4/5"
     },
     {
       place: "Leh",
-      famousFor: "Trekking & adventure destinations with sheer beauty"
+      famousFor: "Trekking & adventure destinations with sheer beauty",
+      Ratings: "4/5"
     },
-    { place: "Gulmarg", famousFor: "The meadow of flowers" }
+    { place: "Gulmarg", famousFor: "The meadow of flowers", Ratings: "3/5" }
   ],
 
   Goa: [
     {
       place: "Bom Jesus Basilica",
-      famousFor: "Oldest churches in Goa & it's architecture"
+      famousFor: "Oldest churches in Goa & it's architecture",
+      Ratings: "4/5"
     },
-    { place: "Arambol Beach", famousFor: "The sweet water lagoon or lake" },
+    {
+      place: "Arambol Beach",
+      famousFor: "The sweet water lagoon or lake",
+      Ratings: "5/5"
+    },
     {
       place: "Mapusa Market",
-      famousFor: "Handicrafts, artworks, clothes and accessories"
+      famousFor: "Handicrafts, artworks, clothes and accessories",
+      Ratings: "3/5"
     }
   ],
 
   "Himachal Pradesh": [
-    { place: "Shimla", famousFor: "Snow-capped peaks in the backdrop" },
-    { place: "Kullu", famousFor: "Valley of the gods" },
-    { place: "Manali", famousFor: "Unlimited adventure opportunities" }
+    {
+      place: "Shimla",
+      famousFor: "Snow-capped peaks in the backdrop",
+      Ratings: "5/5"
+    },
+    { place: "Kullu", famousFor: "Valley of the gods", Ratings: "3/5" },
+    {
+      place: "Manali",
+      famousFor: "Unlimited adventure opportunities",
+      Ratings: "4/5"
+    }
   ],
 
   Kerala: [
-    { place: "Alleppey", famousFor: "Venice of the East" },
-    { place: "Munnar", famousFor: "Hill station and Tea plantations" },
-    { place: "Kumarakom", famousFor: "Alluring flora and fauna" }
+    { place: "Alleppey", famousFor: "Venice of the East", Ratings: "4/5" },
+    {
+      place: "Munnar",
+      famousFor: "Hill station and Tea plantations",
+      Ratings: "4/5"
+    },
+    {
+      place: "Kumarakom",
+      famousFor: "Alluring flora and fauna",
+      Ratings: "3/5"
+    }
   ],
 
   Rajasthan: [
-    { place: "Jaipur", famousFor: "The Pink City" },
-    { place: "Udaipur", famousFor: "The city Of Lakes" },
-    { place: "Jodhpur", famousFor: "A city To Taste Royalty" }
+    { place: "Jaipur", famousFor: "The Pink City", Ratings: "4/5" },
+    { place: "Udaipur", famousFor: "The city Of Lakes", Ratings: "5/5" },
+    { place: "Jodhpur", famousFor: "A city To Taste Royalty", Ratings: "3/5" }
   ]
 };
 
@@ -111,6 +135,9 @@ export default function App() {
               </div>
               <div style={{ fontSize: "smaller" }}>
                 Known For: {travelState.famousFor}
+              </div>
+              <div style={{ fontSize: "smaller" }}>
+                Ratings: {travelState.Ratings}
               </div>
             </li>
           ))}
