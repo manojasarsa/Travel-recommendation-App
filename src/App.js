@@ -161,7 +161,7 @@ export default function App() {
                 textAlign: "left",
                 padding: "1rem",
                 backgroundColor: "lightblue",
-                margin: "1.5rem 0rem",
+                margin: "1.5rem 1.5rem",
                 borderRadius: "1.2rem",
                 width: "90%",
                 listStyle: "none"
